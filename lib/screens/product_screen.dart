@@ -85,7 +85,9 @@ class _ProductScrenBody extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: productService.isSaving
-            ? const CircularProgressIndicator()
+            ? const CircularProgressIndicator(
+                color: Colors.white,
+              )
             : const Icon(Icons.save_outlined),
         onPressed: productService.isSaving
             ? null
